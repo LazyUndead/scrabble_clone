@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://4w8kyft3dqcl"]
+
+[ext_resource type="Script" path="res://Case.gd" id="1_r4w4h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rirad"]
+size = Vector2(53, 53)
+
+[node name="Case" type="Node2D"]
+script = ExtResource("1_r4w4h")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_rirad")
